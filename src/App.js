@@ -22,12 +22,14 @@ function App() {
             </div>
 
             <div className='row'>
-                <Card title="First Challenge">
-                    <RandomNumber min={1} max={10} />
+                <div className='col-sm-6 mx-auto'>
+                    <Card title="First Challenge">
+                        <RandomNumber min={1} max={10} />
 
-                    <StudentCheck name="John Doe" grade="9.4" />
-                    <StudentCheck name="John Doe 2" grade="9.5" />
-                </Card>
+                        <StudentCheck name="John Doe" grade="9.4" />
+                        <StudentCheck name="John Doe 2" grade="9.5" />
+                    </Card>
+                </div>
             </div>
 
         </div>
