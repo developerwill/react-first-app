@@ -3,7 +3,12 @@ import React from 'react';
 
 function App() {
     return (
-        <div>h1</div>
+        <div class="container">
+            <div class="row">
+                <div class="col">One</div>
+                <div class="col">One</div>
+            </div>
+        </div>
     );
 }
 
