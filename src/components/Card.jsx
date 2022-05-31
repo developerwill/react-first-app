@@ -2,8 +2,11 @@ import React from 'react';
 
 const Card = (props) => {
     return (
-        <div>
-            <h1> {props.title}</h1>
+        <div className='card'>
+            <div className='card-body'>
+                <h5 className="card-title">{props.title}</h5>
+                {props.children}
+            </div>
         </div>
     );
 }
