@@ -30,8 +30,8 @@ function App() {
                         <StudentCheck name="John Doe 2" grade="9.5" />
                     </Card>
 
-                    <Card className="mt-3">
-                        <Family surname="Reys"></Family>
+                    <Card className="mt-3 alert-dismissible alert-secondary">
+                        <Family surname="Reys" />
                     </Card>
                 </div>
             </div>
