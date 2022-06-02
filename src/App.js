@@ -9,6 +9,7 @@ import FamilyMember from './components/basic/family/familyMember';
 import StudentsList from './components/basic/students/studentsList';
 import Event from './components/basic/binding/event';
 import Parent from './components/basic/binding/parent';
+import Input from './components/basic/input/input';
 
 function App() {
     const variabeWithHtml = <h1 className='text-center'>React rules!</h1>;
@@ -52,6 +53,10 @@ function App() {
 
                     <Card title="Parent" className="mt-3 alert-danger">
                         <Parent />
+                    </Card>
+
+                    <Card title="Input" className="mt-3">
+                        <Input />
                     </Card>
                 </div>
             </div>
