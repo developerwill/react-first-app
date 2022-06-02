@@ -23,7 +23,7 @@ function App() {
 
             <div className='row'>
                 <div className='col-sm-6 mx-auto'>
-                    <Card title="First Challenge">
+                    <Card title="First Challenge" className="alert-success">
                         <RandomNumber min={1} max={10} />
 
                         <StudentCheck name="John Doe" grade="9.4" />
