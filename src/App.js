@@ -7,6 +7,8 @@ import StudentCheck from './components/basic/studentCheck/StudentCheck';
 import Family from './components/basic/family/family';
 import FamilyMember from './components/basic/family/familyMember';
 import StudentsList from './components/basic/students/studentsList';
+import Event from './components/basic/binding/event';
+import Parent from './components/basic/binding/parent';
 
 function App() {
     const variabeWithHtml = <h1 className='text-center'>React rules!</h1>;
@@ -42,6 +44,14 @@ function App() {
 
                     <Card title="Students" className="mt-3 alert-warning">
                         <StudentsList />
+                    </Card>
+
+                    <Card title="Event" className="mt-3 alert-danger">
+                        <Event />
+                    </Card>
+
+                    <Card title="Parent" className="mt-3 alert-danger">
+                        <Parent />
                     </Card>
                 </div>
             </div>
