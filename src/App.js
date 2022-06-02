@@ -6,6 +6,8 @@ import Card from './components/Card';
 import StudentCheck from './components/basic/studentCheck/StudentCheck';
 import Family from './components/basic/family/family';
 import FamilyMember from './components/basic/family/familyMember';
+import StudentsList from './components/basic/students/studentsList';
+import students from './data/students';
 
 function App() {
     const variabeWithHtml = <h1 className='text-center'>React rules!</h1>;
@@ -37,6 +39,10 @@ function App() {
                             <FamilyMember name="Ana" />
                             <FamilyMember name="Santiago" lastName="Bosques" />
                         </Family>
+                    </Card>
+
+                    <Card title="Students" className="mt-3 alert-warning">
+                        <StudentsList />
                     </Card>
                 </div>
             </div>
