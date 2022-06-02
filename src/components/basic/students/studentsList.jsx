@@ -3,9 +3,9 @@ import students from '../../../data/students';
 
 const StudentsList = (props) => {
 
-    const list = students.map(student => {
+    const list = students.map((student, index) => {
         return (
-            <li className="list-group-item">
+            <li className="list-group-item" key={index}>
                 {student.id} - {student.nome} - {student.nota}
             </li>
         )
