@@ -5,6 +5,7 @@ import RandomNumber from './components/basic/randomNumber/randomNumber';
 import Card from './components/Card';
 import StudentCheck from './components/basic/studentCheck/StudentCheck';
 import Family from './components/basic/family/family';
+import FamilyMember from './components/basic/family/familyMember';
 
 function App() {
     const variabeWithHtml = <h1 className='text-center'>React rules!</h1>;
@@ -22,7 +23,7 @@ function App() {
             </div>
 
             <div className='row'>
-                <div className='col-sm-6 mx-auto'>
+                <div className='col-sm-10 mx-auto'>
                     <Card title="First Challenge" className="alert-success">
                         <RandomNumber min={1} max={10} />
 
@@ -31,7 +32,11 @@ function App() {
                     </Card>
 
                     <Card className="mt-3 alert-dismissible alert-secondary">
-                        <Family surname="Reys" />
+                        <Family surname="Reyes">
+                            <FamilyMember name="Hugo" />
+                            <FamilyMember name="Ana" />
+                            <FamilyMember name="Santiago" lastName="Bosques" />
+                        </Family>
                     </Card>
                 </div>
             </div>
