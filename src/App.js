@@ -11,6 +11,7 @@ import Event from './components/basic/binding/event';
 import Parent from './components/basic/binding/parent';
 import Input from './components/basic/input/input';
 import ProductsList from './components/basic/products/productsList';
+import Game from './components/basic/game/game';
 
 function App() {
     const variabeWithHtml = <h1 className='text-center'>React rules!</h1>;
@@ -62,6 +63,9 @@ function App() {
 
                     <Card title="Products" className="mt-3">
                         <ProductsList />
+                    </Card>
+                    <Card>
+                        <Game min={1} max={100} ></Game>
                     </Card>
                 </div>
             </div>
