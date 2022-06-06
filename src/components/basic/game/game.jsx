@@ -16,7 +16,7 @@ const Game = (props) => {
     }
 
     function verify(value) {
-        if (value == number)
+        if (value === number) // This should be only == but it throws a compilation warning so I've put 3 instead
             setTip('You\'ve on!');
         else
             if (value > number)
