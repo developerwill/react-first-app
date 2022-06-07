@@ -34,11 +34,7 @@ const navbarLinks = [
     {
         href: '/with-params',
         text: 'Component with params',
-    },
-    {
-        href: '/',
-        text: 'home',
-    },
+    }
 ];
 
 export default navbarLinks;

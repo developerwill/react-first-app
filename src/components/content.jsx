@@ -12,6 +12,7 @@ import Family from './basic/family/family';
 import FamilyMember from './basic/family/familyMember';
 import Parent from './basic/binding/parent';
 import Event from './basic/binding/event';
+import PageNotFound from '../views/404';
 
 const Content = (props) => {
     return (
@@ -35,6 +36,7 @@ const Content = (props) => {
                 <Route path="/student-check" element={<StudentCheck />} />
                 <Route path="/students" element={<StudentsList />} />
                 <Route path="/with-params" element={<Withparams name="John Doe" />} />
+                <Route path="*" element={<PageNotFound />} />
             </Routes>
         </main>
     );
