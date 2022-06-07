@@ -16,7 +16,8 @@ const Game = (props) => {
     }
 
     function verify(value) {
-        if (value === number) // This should be only == but it throws a compilation warning so I've put 3 instead
+        /* eslint eqeqeq: 0 */ //This line fixes the warning message of using == instead of ===
+        if (value == number)
             setTip('You\'ve on!');
         else
             if (value > number)

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import FirstComponent from './basic/firstComponent/firstComponent';
-import GameData from './basic/game/data';
+import Game from './basic/game/game';
 import Input from './basic/input/input';
 import ProductsList from './basic/products/productsList';
 import RandomNumber from './basic/randomNumber/randomNumber';
@@ -29,12 +29,12 @@ const Content = (props) => {
 
                 <Route path="/binding-parent" element={<Parent />}></Route>
                 <Route path="/binding-event" element={<Event />}></Route>
-                <Route path="/game" element={<GameData />} />
+                <Route path="/game" element={<Game min={1} max={20} />} />
                 <Route path="/input" element={<Input />} />
                 <Route path="/products-list" element={<ProductsList />} />
                 <Route path="/student-check" element={<StudentCheck />} />
                 <Route path="/students" element={<StudentsList />} />
-                <Route path="/with-params" element={<Withparams />} />
+                <Route path="/with-params" element={<Withparams name="John Doe" />} />
             </Routes>
         </main>
     );
